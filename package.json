@@ -1,0 +1,24 @@
+{
+  "name": "munchquest",
+  "version": "1.0.0",
+  "description": "MunchQuest final project \u2014 Node, Express and MongoDB",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "demo": "node demo.js",
+    "test": "node --test test/*.test.js",
+    "test:mongodb": "node --env-file=test/mongodb.env --test test/*.test.js",
+    "restore:restaurants": "node restore-restaurants.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongodb": "^6.8.0"
+  },
+  "devDependencies": {
+    "mingo": "^6.7.2",
+    "mongodb-memory-server": "^10.4.3"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
